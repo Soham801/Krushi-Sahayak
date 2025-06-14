@@ -1,1 +1,1 @@
-web: gunicorn krushisahayak.wsgi:application 
+web: gunicorn Krushi_sahayak.wsgi:application 
