@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dff0d8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chat-container {
+            width: 50%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .chat-box {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #a2d5ab;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f5fdf0;
+        }
+        .user-message {
+            background: #c3e6cb;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: right;
+        }
+        .bot-message {
+            background: #f0f8e2;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: left;
+        }
+        .input-box {
+            display: flex;
+            margin-top: 10px;
+        }
+        .input-box input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #a2d5ab;
+        }
+        .input-box button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .input-box button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="chatbotForm">
+        <input type="text" id="userInput" name="message">
+        <button type="submit">Send</button>
+    </form>
+    
+    
+    <input type="hidden" id="csrf_token" value="{{ csrf_token }}">
+
+    {% comment %} <script>
+    document.getElementById("chatbotForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // ✅ Prevent form from sending GET request
+    
+        let message = document.getElementById("userInput").value;
+    
+        fetch('/chatbot/', {
+            method: 'POST',  // ✅ Explicitly use POST
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCSRFToken()  // CSRF Token for Django
+            },
+            body: JSON.stringify({ message: message })
+        })
+        .then(response => response.json())
+        .then(data => console.log("AI Response:", data.response))
+        .catch(error => console.error('Error:', error));
+        function getCSRFToken() {
+            return document.getElementById("csrf_token").value;
+        }
+        
+    });
+    </script> {% endcomment %}
+    
+    <script src="chatbot.js" defer></script>
+    
+
+</body>
+</html>

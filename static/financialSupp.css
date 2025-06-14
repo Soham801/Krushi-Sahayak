@@ -1,0 +1,125 @@
+:root {
+    --primary: #15803d;
+    --primary-hover: #166534;
+    --primary-light: #dcfce7;
+    --background: #f0fdf4;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --white: #ffffff;
+    --border: #e5e7eb;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#f0fdf4, #dcfce7);
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card h2 {
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.eligibility {
+    font-weight: bold;
+    color: #2e7d32;
+}
+.Application {
+    font-weight: bold;
+    color: #2e7d32;
+}
+footer {
+    background-color: #15803d;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    position: relative;
+    bottom: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    outline: none;
+}
+#suggestion-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 25%;
+    z-index: 1000;
+}
+
+#suggestion-box li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#suggestion-box li:hover {
+    background-color: #f0f0f0;
+}

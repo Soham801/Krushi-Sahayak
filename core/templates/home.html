@@ -1,0 +1,206 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrushiSahayak - Agricultural Schemes Platform</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="brand">
+                    <i data-lucide="trees"></i>
+                    <span>KrushiSahayak</span>
+                </div>
+                <div class="nav-links">
+                    <a href="{% url "home.html" %}" class="nav-link">Home</a>
+                    <a href="{% url 'schemes.html'%}" class="nav-link">Schemes</a>
+                    <a href="{% url 'Subscides.html'%}" class="nav-link">Subscides</a>
+                    <a href="{% url "financialSupp.html" %}" class="nav-link">Financial Support</a>
+                    <a href="{% url "AboutUs.html" %}" class="nav-link">About Us</a>
+                </div>
+                <div class="auth-buttons">
+                    <a href="{% url 'login.html' %} " class="btn btn-outline">Login</a>
+                    <a href=" {% url 'signup.html' %} " class="btn btn-primary">Register</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Empowering Farmers with Government Schemes</h1>
+                    <p>Access all government agricultural schemes, subsidies, and financial support in one place. 
+                        Making farming support accessible for everyone.</p>
+                    <div class="hero-buttons">
+                        <a href= "{% url "schemes.html" %}" class="btn btn-primary">Explore Schemes</a>
+                        <a  href="{% url "AboutUs.html" %}" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    {% load static %}
+                    <img src="{% static 'images/homePageIMG.jpg' %}" alt="HomePageIMG">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Schemes -->
+    <section class="schemes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Schemes</h2>
+                <p>Explore the latest government schemes and programs</p>
+            </div>
+            <div class="schemes-grid">
+                <!-- Scheme Card 1 -->
+                <div class="scheme-card">
+                    <div class="card-header">
+                        <div class="scheme-icon">
+                            <i data-lucide="indian-rupee"></i>
+                        </div>
+                        <span class="badge">Financial</span>
+                    </div>
+                    <h3>PM-KISAN Scheme</h3>
+                    <p>Direct income support of ₹6,000 per year for eligible farmer families.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <span>Eligibility:</span>
+                            Small and Marginal Farmers
+                        </div>
+                        <div class="detail-item">
+                            <span>Support:</span>
+                            ₹6,000 per year
+                        </div>
+                    </div>
+                    <a href="{% url 'schemes.html'%}" class="btn btn-outline btn-full">
+                        View Details
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Scheme Card 2 -->
+                <div class="scheme-card">
+                    <div class="card-header">
+                        <div class="scheme-icon">
+                            <i data-lucide="tractor"></i>
+                        </div>
+                        <span class="badge">Equipment</span>
+                    </div>
+                    <h3>Farm Mechanization Program</h3>
+                    <p>Subsidy on purchase of various agricultural machinery and equipment.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <span>Subsidy:</span>
+                            Up to 50% of cost
+                        </div>
+                        <div class="detail-item">
+                            <span>Available:</span>
+                            All States
+                        </div>
+                    </div>
+                    <a href="{% url 'schemes.html'%}" class="btn btn-outline btn-full">
+                        View Details
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Scheme Card 3 -->
+                <div class="scheme-card">
+                    <div class="card-header">
+                        <div class="scheme-icon">
+                            <i data-lucide="sprout"></i>
+                        </div>
+                        <span class="badge">Crops</span>
+                    </div>
+                    <h3>Crop Insurance Scheme</h3>
+                    <p>Comprehensive risk coverage for crop losses due to non-preventable risks.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <span>Coverage:</span>
+                            All Food Crops
+                        </div>
+                        <div class="detail-item">
+                            <span>Premium:</span>
+                            2% of Sum Insured
+                        </div>
+                    </div>
+                    <a href="{% url 'schemes.html'%}" class="btn btn-outline btn-full">
+                        View Details
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="section-footer">
+                
+                <a href="{% url "schemes.html" %}" class="btn btn-primary"> View All Schemes </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple steps to access government schemes</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>Find Schemes</h3>
+                    <p>Search and filter through various government schemes available for farmers</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i data-lucide="indian-rupee"></i>
+                    </div>
+                    <h3>Check Eligibility</h3>
+                    <p>Verify your eligibility criteria and required documentation</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i data-lucide="sprout"></i>
+                    </div>
+                    <h3>Apply Online</h3>
+                    <p>Complete the application process online with guided assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help with Applications?</h2>
+                <p>Our AI Chat Bot is here to help you with the application process.</p>
+                <div class="cta-buttons">
+                    <a href="{% url "chatbot.html" %}" class="btn btn-white">Chat with AI</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="{% static "chatbot.js" %}"></script>
+    <script src="{% static "scripts.js" %}"></script>
+</body>
+</html>

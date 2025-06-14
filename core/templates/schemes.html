@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Schemes for Farmers</title>
+  <link rel="stylesheet" href="{% static "schemes.css" %}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+     <!-- Navigation -->
+     <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="brand">
+                    <i data-lucide="trees"></i>
+                    <span>KrushiSahayak</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="{% url 'schemes.html'%}" class="nav-link">Schemes</a>
+                    <a href="#" class="nav-link">Subsidies</a>
+                    <a href="#" class="nav-link">About Us</a>
+                </div>
+                <div class="auth-buttons">
+                    <a href="{% url 'login.html' %} " class="btn btn-outline">Login</a>
+                    <a href=" {% url 'signup.html' %} " class="btn btn-primary">Register</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+  <header>
+    <h1>Government Schemes for Farmers</h1>
+    <p>Explore various government schemes designed to support farmers.</p>
+  </header>
+
+  <main>
+    <div class="schemes-container">
+      <!-- Scheme Card 1 -->
+      <div class="scheme-card">
+        <h2>Pradhan Mantri Kisan Samman Nidhi</h2>
+        <p><strong>Eligibility:</strong> Farmers with less than 2 hectares of land.</p>
+        <p><strong>How to Apply:</strong> Visit <a href="https://pmkisan.gov.in" target="_blank">pmkisan.gov.in</a> to apply online.</p>
+      </div>
+
+      <!-- Scheme Card 2 -->
+      <div class="scheme-card">
+        <h2>Kisan Credit Card Scheme</h2>
+        <p><strong>Eligibility:</strong> All farmers, including individual and joint borrowers.</p>
+        <p><strong>How to Apply:</strong> Contact your nearest bank or cooperative society.</p>
+      </div>
+
+      <!-- Scheme Card 3 -->
+      <div class="scheme-card">
+        <h2>Pradhan Mantri Fasal Bima Yojana</h2>
+        <p><strong>Eligibility:</strong> Farmers growing notified crops.</p>
+        <p><strong>How to Apply:</strong> Register through the official portal at 
+            <a href="https://pmfby.gov.in" target="_blank">pmfby.gov.in</a>.</p>
+      </div>
+
+      <!-- Scheme Card 4 -->
+      <div class="scheme-card">
+        <h2>National Mission for Sustainable Agriculture</h2>
+        <p><strong>Eligibility:</strong> Farmers practicing sustainable farming methods.</p>
+        <p><strong>How to Apply:</strong> Apply through your state agriculture department.</p>
+      </div>
+      <div class="scheme-card">
+        <h2>Agricultural Technology Management Agency (ATMA)</h2>
+        <p><strong>Eligibility:</strong> Farmers practicing sustainable farming methods.(All farmers are eligible.)</p>
+        <p><strong>How to Apply:</strong> Farmers can join local Farmer Interest Groups 
+            (FIGs) or contact the district ATMA office for participation..</p>
+      </div>
+      <div class="scheme-card">
+        <h2>E-NAM (National Agriculture Market)</h2>
+        <p><strong>Eligibility:</strong> Farmers practicing sustainable farming methods.</p>
+        <p><strong>How to Apply:</strong> Apply through E-nam Registration portal -
+             <a href="https://enam.gov.in/web/Enam_ctrl/enam_registration" 
+            target= "_blank">E-Nam Registration portal</a></p>
+      </div>
+      <div class="scheme-card">
+        <h2>Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)</h2>
+        <p><strong>Eligibility:</strong> Farmers aged 18-40 years with cultivable land up to 2 hectares.</p>
+        <p><strong>How to Apply:</strong> Eligible farmers can enroll at Common Service Centers
+             (CSCs) with necessary documents like Aadhaar card and bank account details.</p>
+      </div>
+      <div class="scheme-card">
+        <h2>Paramparagat Krishi Vikas Yojana (PKVY)</h2>
+        <p><strong>Eligibility:</strong>Groups of farmers or clusters willing to adopt organic farming practices</p>
+        <p><strong>How to Apply:</strong>Farmers can form clusters and 
+            apply through the respective state nodal agencies or agricultural departments.</p>
+      </div>
+      <div class="scheme-card">
+        <h2> Farm Mechanization Program</h2>
+        <p><strong>Eligibility:</strong>Preference is given to small & marginal farmers, SC/ST farmers, and women farmers.</p>
+        <p><strong>How to Apply:</strong>Visit the official government portal - <a href="https://agrimachinery.nic.in" 
+            target= "_blank">AgriMachinery.in</a></p>
+      </div>
+      <div class="scheme-card">
+        <h2> Soil Health Card Scheme</h2>
+        <p><strong>Eligibility:</strong>All farmers are eligible.</p>
+        <p><strong>How to Apply:</strong>Farmers can approach local agricultural offices or
+             visit the scheme's official website to get their soil tested and obtain the health card.</p>
+      </div>
+    </div>
+  </main>
+
+  <script> {% static "scripts.js" %}</script>
+</body>
+</html>

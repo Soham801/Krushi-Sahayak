@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Schemes for Farmers</title>
+  <link rel="stylesheet" href="{% static "Subscides.css" %}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+     <!-- Navigation -->
+     <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="brand">
+                    <i data-lucide="trees"></i>
+                    <span>KrushiSahayak</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="{% url 'schemes.html'%}" class="nav-link">Schemes</a>
+                    <a href="#" class="nav-link">Subsidies</a>
+                    <a href="#" class="nav-link">About Us</a>
+                </div>
+                <div class="auth-buttons">
+                    <a href="{% url 'login.html' %} " class="btn btn-outline">Login</a>
+                    <a href=" {% url 'signup.html' %} " class="btn btn-primary">Register</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+  <header>
+    <h1>Government Subsidies for Farmers</h1>
+    <p>Explore various government subsidies designed to support farmers.</p>
+  </header>
+
+  <main>
+    <div class="schemes-container">
+      <!-- Scheme Card 1 -->
+      <div class="scheme-card">
+        <h2>Fertilizer Subsidy</h2>
+        <p><strong>Eligibility:</strong> All farmers, including small, marginal, tenant, and sharecropper farmers, are eligible for the fertilizer subsidy, provided they purchase from authorized dealers with Aadhaar-based verification.</p>
+        <p><strong>How to Apply:</strong> Visit <a href="https://www.fert.nic.in/fertilizer-subsidy" target="_blank">pmkisan.gov.in</a> to apply online.</p>
+      </div>
+
+      <!-- Scheme Card 2 -->
+      <div class="scheme-card">
+        <h2>Seed Subsidy</h2>
+        <p><strong>Eligibility:</strong> All farmers, including small, marginal, tenant, and sharecropper farmers, are eligible for seed subsidies provided they purchase from government-approved dealers.</p>
+        <p><strong>How to Apply:</strong>Please visit government portal of your state. Or <a href="https://dbt.seednet.gov.in/" target="_blank">Visit here.</a></p>
+      </div>
+
+      <!-- Scheme Card 3 -->
+      <div class="scheme-card">
+        <h2>Electricity Subsidy</h2>
+        <p><strong>Eligibility:</strong> Tenant Farmers & Sharecroppers : Eligible in some states with valid lease agreements.</p>
+        <p><strong>How to Apply:</strong> Apply through the state electricity board or distribution company (DISCOM).</p>
+      </div>
+
+      <!-- Scheme Card 4 -->
+      <div class="scheme-card">
+        <h2>Irrigation Subsidy</h2>
+        <p><strong>Eligibility:</strong>This subsidy is mainly offered under schemes like Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) and various state-level irrigation programs.</p>
+        <p><strong>How to Apply:</strong>Visit <a href="https://pmksy.gov.in/" target="_blank">pmksy.com</a> to apply online</p>
+      </div>
+      <div class="scheme-card">
+        <h2>Pesticide and Organic Farming Subsidy</h2>
+        <p><strong>Eligibility:</strong> Tenant Farmers & Sharecroppers : Eligible if they provide lease agreements.</p>
+        <p><strong>How to Apply:</strong> Apply Through Agriculture Department : Available at local agriculture offices.</p>
+      </div>
+      <div class="scheme-card">
+        <h2>Interest Subvention / KCC Scheme</h2>
+        <p><strong>Eligibility:</strong> Joint Liability Groups (JLGs) & Self-Help Groups (SHGs) Can apply for group-based loans.
+            Fishermen & Dairy Farmers are eligible under extended KCC benefits.
+            Farmer Producer Organizations (FPOs) can avail of group loans for collective farming.</p>
+        <p><strong>How to Apply:</strong> Visit to your nearest/favourable bank and ask for this subsidy.</p>
+      </div>
+      <div class="scheme-card">
+        <h2>Agriculture Infrastructure Fund (AIF)</h2>
+        <p><strong>Eligibility:</strong> Farmers & Individual Entrepreneurs those engaged in agricultural activities.
+            Farmer Producer Organizations (FPOs) groups of farmers managing collective infrastructure.</p>
+        <p><strong>How to Apply:</strong> Visit the AIF<a href="https://agriinfra.dac.gov.in/" target="_blank"> poratal.</a></p>
+      </div>
+      <div class="scheme-card">
+        <h2>Pradhan Mantri Fasal Bima Yojana</h2>
+        <p><strong>Eligibility:</strong>Farmers with Kisan Credit Card (KCC) Loans, mandatory for farmers taking crop loans.
+            Non-Loanee Farmers can voluntarily enroll in the scheme.</p>
+        <p><strong>How to Apply:</strong> Visit <a href="https://pmfby.gov.in/" target="_blank">https://pmfby.gov.in/</a></p>
+
+      </div>
+    </div>
+  </main>
+
+
+</body>
+</html>
