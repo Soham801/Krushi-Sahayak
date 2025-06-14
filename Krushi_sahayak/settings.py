@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-3szt*8as^n-fog*$j%ncrvcoh2twi8y1k)8o3!ale370^_3_a&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['krushisahayak.onrender.com']
+
 
 
 # Application definition
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 CORS_ALLOWED_ORIGINS = [
