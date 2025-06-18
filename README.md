@@ -3,11 +3,6 @@
 **Krushi Sahayak** is a farmer-friendly web platform that simplifies access to Indian government agricultural schemes, subsidies, and financial support resources. It is designed to empower farmers with clear, accessible, and localized information in a user-friendly interface.
 
 
-
-![Banner](https://via.placeholder.com/1200x400.png?text=Krushi+Sahayak+%7C+Empowering+Indian+Farmers)
-
-
-
 ## 🚀 Features
 
 - 🔍 **Easy Navigation** — Simple and clean UI with clearly categorized sections.
@@ -28,15 +23,6 @@
 | Database    | SQLite                 |
 | AI (Planned)| OpenAI API             |
 | Deployment  | Render, Netlify (planned for frontend) |
-
-
-
-## 📷 Screenshots
-
-| Homepage | Scheme List | Chatbot (Planned) |
-|----------|-------------|-------------------|
-| ![Home](https://via.placeholder.com/300x200.png?text=Home) | ![Schemes](https://via.placeholder.com/300x200.png?text=Schemes) | ![Chatbot](https://via.placeholder.com/300x200.png?text=Chatbot) |
-
 
 
 ## ⚙️ Installation & Setup
